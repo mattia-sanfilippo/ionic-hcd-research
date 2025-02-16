@@ -1,1 +1,6 @@
-/* Styles go here */
+@media (prefers-contrast: more) {
+    body {
+      background-color: black;
+      color: white;
+    }
+}

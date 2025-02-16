@@ -1,9 +1,23 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>KeyboardNavigation</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/accessibility"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Keyboard Navigation and Focus Management</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <!-- Content goes here -->
+  <ion-item>
+    <ion-label position="floating">Input 1</ion-label>
+    <ion-input #input1 id="input1" tabindex="0"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Input 2</ion-label>
+    <ion-input #input2 id="input2" tabindex="0"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="input1.setFocus()">Focus Input 1</ion-button>
+  <ion-button (click)="input2.setFocus()">Focus Input 2</ion-button>
 </ion-content>
