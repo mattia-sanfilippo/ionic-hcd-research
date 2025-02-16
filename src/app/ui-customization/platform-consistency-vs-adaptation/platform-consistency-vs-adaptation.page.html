@@ -1,9 +1,18 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>PlatformConsistencyVsAdaptation</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/ui-customization"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Platform Consistency vs Adaptation</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <!-- Content goes here -->
+  <ng-container *ngIf="isIos">
+    <ion-button mode="ios">iOS Button</ion-button>
+  </ng-container>
+
+  <ng-container *ngIf="isAndroid">
+    <ion-button mode="md">Android Button</ion-button>
+  </ng-container>
 </ion-content>
