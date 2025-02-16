@@ -1,9 +1,21 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>ErrorMessageHandling</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/user-feedback-handling"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Error Message Handling</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <!-- Content goes here -->
+<ion-content class="ion-padding">
+  <form [formGroup]="form">
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input formControlName="email"></ion-input>
+    </ion-item>
+    <ion-text color="danger" *ngIf="form.get('email')?.invalid && form.get('email')?.touched">
+      Invalid email address
+    </ion-text>
+    <ion-button expand="block" (click)="submitForm()">Submit</ion-button>
+  </form>
 </ion-content>

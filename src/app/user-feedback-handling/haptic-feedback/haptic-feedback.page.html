@@ -1,9 +1,12 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>HapticFeedback</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/user-feedback-handling"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Haptic Feedback</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <!-- Content goes here -->
+  <ion-button (click)="triggerHaptic()">Trigger Haptic Feedback</ion-button>
 </ion-content>

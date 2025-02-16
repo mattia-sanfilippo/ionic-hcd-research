@@ -1,9 +1,15 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>ToastMessagesAndSnackbars</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/user-feedback-handling"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Toast Messages and Snackbars</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <!-- Content goes here -->
+  <ion-content class="ion-padding">
+    <ion-button (click)="showToast()">Show Toast</ion-button>
+    <ion-button (click)="showAlert()">Show Alert</ion-button>
+  </ion-content>
 </ion-content>
