@@ -1,9 +1,21 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>RightToLeftLayout</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/internationalization"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ 'greeting' | translate }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <!-- Content goes here -->
+<ion-content class="ion-padding">
+  <ion-button (click)="toggleLanguage()">Toggle RTL / LTR layout</ion-button>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{ 'greeting' | translate }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{ 'lorem' | translate }}
+    </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -1,8 +1,14 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>MultiLanguageSupport</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/internationalization"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Multi language Support</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
+  <ion-button (click)="toggleLanguage()">
+    {{ 'change_language' | translate }}
+  </ion-button>
 </ion-content>

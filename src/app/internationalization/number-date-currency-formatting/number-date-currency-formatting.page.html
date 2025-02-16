@@ -1,9 +1,17 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>NumberDateCurrencyFormatting</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/internationalization"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Number, Date and Currency Formatting</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <!-- Content goes here -->
+<ion-content class="ion-padding">
+  <p>Number: {{ formattedNumber }}</p>
+  <p>Date: {{ formattedDate }}</p>
+  <p>Currency: {{ formattedCurrency }}</p>
+
+  <ion-button (click)="changeLanguage('fr')">Switch to French</ion-button>
+  <ion-button (click)="changeLanguage('en')">Switch to English</ion-button>
 </ion-content>
