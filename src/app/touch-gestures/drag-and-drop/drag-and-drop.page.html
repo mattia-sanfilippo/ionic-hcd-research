@@ -1,9 +1,22 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>DragAndDrop</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/touch-gestures"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Drag and Drop</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <!-- Content goes here -->
+<ion-content class="ion-padding">
+  <div class="container" #dragContainer>
+    <div class="box"  id="dragContainer" #draggable style="touch-action: none;">
+      <ion-icon name="move"></ion-icon>
+    </div>
+  </div>
+
+  <div class="container"  #dropContainer>
+    <div class="box" id="dropContainer">
+      Drop here
+    </div>
+  </div>
 </ion-content>

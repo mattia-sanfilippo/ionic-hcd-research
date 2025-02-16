@@ -1,9 +1,16 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>PinchToZoom</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/touch-gestures"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Pinch to Zoom</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <!-- Content goes here -->
+<ion-content class="ion-padding">
+  <div 
+    #zoomBox
+    class="zoom-box">
+    <img [style.transform]="'scale(' + scale + ')'" src="https://picsum.photos/800/1200" />
+  </div>
 </ion-content>

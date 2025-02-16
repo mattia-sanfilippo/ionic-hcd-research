@@ -1,1 +1,12 @@
-/* Styles go here */
+.gesture-box {
+    width: 200px;
+    height: 200px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #333;
+    border-radius: 10px;
+    margin: 10px auto;
+}

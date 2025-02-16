@@ -1,9 +1,14 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>BasicTapGestures</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/touch-gestures"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Basic Tap Gestures</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <!-- Content goes here -->
+<ion-content class="ion-padding">
+  <div #gestureBox class="gesture-box">
+    Tap, Double Tap, or Long Press here
+  </div>
 </ion-content>
