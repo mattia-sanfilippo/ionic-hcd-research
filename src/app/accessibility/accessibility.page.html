@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Accessibility</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-button [routerLink]="['/accessibility/screen-reader-support']">
+      Screen Reader Support
+    </ion-button>
+    <ion-button [routerLink]="['/accessibility/semantic-elements-and-aria-roles']">
+      Semantic Elements and ARIA Roles
+    </ion-button>
+    <ion-button [routerLink]="['/accessibility/dynamic-text-scaling']">
+      Dynamic Text Scaling
+    </ion-button>
+    <ion-button [routerLink]="['/accessibility/contrast-and-color-inversion']">
+      Contrast and Color Inversion
+    </ion-button>
+    <ion-button [routerLink]="['/accessibility/keyboard-navigation']">
+      Keyboard Navigation
+    </ion-button>
+    <ion-button [routerLink]="['/accessibility/focus-management']">
+      Focus Management
+    </ion-button>
+</ion-content>
